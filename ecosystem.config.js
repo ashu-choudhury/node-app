@@ -14,7 +14,7 @@ module.exports = {
       },
       env_production: {
         NODE_ENV: 'production',  // Environment variables for the production environment
-        PORT: 80                 // Port for the app in production
+        PORT: 3000                 // Port for the app in production
       },
       log_date_format: 'YYYY-MM-DD HH:mm:ss',  // Log date format
       error_file: './logs/app-error.log',      // Path to error log
