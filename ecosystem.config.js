@@ -3,8 +3,8 @@ module.exports = {
     {
       name: 'node-app',            // Name of the application
       script: './server.js',     // Path to the main script
-      instances: 'max',           // Set to 'max' to run the app with as many instances as there are CPU cores (can be a number as well)
-      exec_mode: 'cluster',      // Use 'cluster' for multi-core systems to maximize performance
+      instances: 1,           // Set to 'max' to run the app with as many instances as there are CPU cores (can be a number as well)
+      exec_mode: 'fork',      // Use 'cluster' for multi-core systems to maximize performance
       watch: false,               // Enable watching for file changes (optional)
       autorestart: true,         // Automatically restart the app if it crashes
       max_memory_restart: '1G',  // Restart if memory usage exceeds 1GB
